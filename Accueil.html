@@ -12,28 +12,29 @@
             <div class="image">
 
                 <header>
-                    <nav class="menuNormal">
+                    <div class="menuNormal">
                         <ul>
                             <li class="boutonMenu"><a href="#">Accueil</a></li>
                             <li class="boutonMenu"><a href="./Event.html">Événements</a></li>
-                            <li class="boutonMenu"><a href="./Login.html">Connexion</a></li>
+                            <li class="boutonMenu"><a href="#">Connexion</a></li>
                             <li class="boutonMenu"><a href="#">Langue</a></li>
                         </ul>
-                    </nav>
-                    <div class="searchbar">
-                        <input type="text" placeholder="Rechercher">
-                        <button>Rechercher</button>
                     </div>
 
                     <div class="menuB">
-                        <input type="checkbox" id="hamburger">
-                        <label id="hamburger-logo" for="hamburger">☰</label>
-                        <ul>
+                        <input type="checkbox" id="hamburger" style="visibility: hidden;">
+                        <label id="hamburger-logo" for="hamburger"><img src="./images/burger-menu.svg" alt="menu burger"></label>
+                        <ul class="boutonMenuB">
                             <li class="boutonMenu"><a href="#">Accueil</a></li>
                             <li class="boutonMenu"><a href="./Event.html">Événements</a></li>
                             <li class="boutonMenu"><a href="./Login.html">Connexion</a></li>
                             <li class="boutonMenu"><a href="#">Langue</a></li>
                         </ul>
+                    </div>
+
+                    <div class="searchbar">
+                        <input type="text" placeholder="Rechercher">
+                        <button>Rechercher</button>
                     </div>
                 </header>
 
