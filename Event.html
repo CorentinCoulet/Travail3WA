@@ -3,27 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./css/styleAccueil.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
         <title>Neetup</title>
     </head>
 
     <body>
         <div class="degrade">
             <div class="image">
-                    <header>
-                        <nav>
-                            <ul>
-                                <li class="boutonMenu"><a href="./Accueil.html">Accueil</a></li>
-                                <li class="boutonMenu"><a href="#">Événements</a></li>
-                                <li class="boutonMenu"><a href="#">Connexion</a></li>
-                                <li class="boutonMenu"><a href="#">Langue</a></li>
-                            </ul>
-                        </nav>
+                <header>
+                    <div class="menuNormal">
+                        <ul>
+                            <li class="boutonMenu"><a href="./Accueil.html">Accueil</a></li>
+                            <li class="boutonMenu"><a href="./Event.html">Événements</a></li>
+                            <li class="boutonMenu"><a href="#">Connexion</a></li>
+                            <li class="boutonMenu"><a href="#">Langue</a></li>
+                        </ul>
                         <div class="searchbar">
                             <input type="text" placeholder="Rechercher">
                             <button>Rechercher</button>
                         </div>
-                    </header>
+                    </div>
+
+                    <div class="menuB">
+                        <div class="logoBar">
+                            <div>
+                                <input type="checkbox" id="hamburger">
+                                <label for="hamburger" class="hamburger-label">
+                                    <img src="./images/burger-menu.svg" alt="menu burger" class="hamburger-logo">
+                                </label>
+                            </div>
+                            <div class="searchbar">
+                                <input type="text" placeholder="Rechercher">
+                                <button>Rechercher</button>
+                            </div>
+                        </div>
+                        <ul class="boutonMenuB">
+                            <li class="boutonMenu"><a href="./Accueil.html">Accueil</a></li>
+                            <li class="boutonMenu"><a href="./Event.html">Événements</a></li>
+                            <li class="boutonMenu"><a href="#">Connexion</a></li>
+                            <li class="boutonMenu"><a href="./Langue.html">Langue</a></li>
+                        </ul>
+                    </div>
+                </header>
 
                     <main>
                         <table class="eventListe">

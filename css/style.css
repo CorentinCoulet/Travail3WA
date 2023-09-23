@@ -12,8 +12,9 @@ body {
 }
 
 header {
-    padding: 10px;
-    width: 100%;
+    padding-top: 10px;
+    padding-right: 20px;
+    width: 98%;
     display: flex;
     justify-content: flex-end;
     align-items: right;
@@ -33,12 +34,8 @@ header {
 .image {
     width: calc(100% - 50px);
     height: calc(100% - 50px);
-    background-image: url("../images/reunion.jpg");
+    background-image: url("../images/reunion2.jpg");
     background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
   
 .image p {
@@ -90,10 +87,14 @@ input::placeholder {
     box-shadow: 2px 2px 5px #3F373C;
 }
 
+.searchbar {
+    display: flex;
+    flex-direction: row;
+}
+
 .boutonMenu:hover {
     background-color: #8BBDBD; 
 }
-
 
 .accueil {
     display: flex;
@@ -104,10 +105,14 @@ input::placeholder {
 
 .reunion {
     width: 100%;
-    height: 100%;
-}
+    height: auto;
+} 
 
 .tchatMenu {
+    display: none;
+}
+
+.logoTchat:active + .tchatMenu {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -119,22 +124,39 @@ input::placeholder {
     overflow: hidden;
     background-color: #D8CBB4;
     position: fixed;
-    bottom: 80px;
-    right: 5px;
-    display: none;
-}
+    bottom: 100px;
+    right: 25px; 
+} 
 
 .configMenu {
     display: flex;
     flex-direction: row;
 }
 
+.menuNormal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menuB {
+    display: none;
+}
+
+.groupe {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.messages {
+    margin: 5px;
+}
+
 .message, .groupe {
     padding: 10px;
-    margin: 5px;
     background-color: #F3F1F1;
-    border-radius: 5px;
-    color: #3F2A35;
+    color: #3F2A35; 
 }
 
 .saisieMessage {
@@ -155,22 +177,6 @@ input::placeholder {
     background-color: #8BBDBD; 
 }
 
-.menuB {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    display: none;
-}
-
-.boutonMenuB {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
 .menuBurgerPage a {
     color: white;
     text-decoration: none;
@@ -186,7 +192,25 @@ input::placeholder {
         display: none;
     }
     .menuB {
-        display: contents;
+        display: flex;
+        flex-direction: column;
+    }
+    .boutonMenuB {
+        display: none;
+    }
+    .logoBar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #hamburger {
+        visibility: hidden;
+    }
+    .hamburger-logo:active + .boutonMenuB {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
     }
 }
 
