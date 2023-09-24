@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./css/style.css" rel="stylesheet">
         <title>Neetup</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🥳</text></svg>">
     </head>
 
     <body>
@@ -47,6 +46,47 @@
                         </ul>
                     </div>
                 </header>
+
+                <main>
+                    <form action="pageInscription" method="post" class="pageInscription">
+                        <ul class="connexionBasique">
+                            <li>
+                              <label for="name">Identifiant</label>
+                              <input type="text" name="pseudo" />
+                            </li>
+                            <li>
+                              <label for="mail">Mot de Passe:</label>
+                              <input type="password" name="password" />
+                            </li>
+                            <li>
+                              <label for="msg">Email</label>
+                              <input type="email" name="email" />
+                            </li>
+                            <li>
+                                <input type="checkbox" name="resterCo" />
+                                <label for="msg">Rester connecté(e)</label>
+                              </li>
+                            <li>
+                                <button type="submit">Valider</button>
+                            </li>
+                        </ul>
+
+                        <p>--------------- ou ---------------</p>
+
+                        <ul class="connexionAutre">
+                            <li>
+                                <button type="submit"><img src="./images/facebook.svg" alt="logo Facebook" /> Connexion avec Facebook</button>
+                            </li>
+                            <li>
+                                <button type="submit"><img src="./images/google.svg" alt="logo Google" /> Connexion avec Google</button>
+                            </li>
+                            <li>
+                                
+                                <button type="submit"><img src="./images/apple.svg" alt="logo Apple" /> Connexion avec Apple</button>
+                            </li>
+                        </ul>
+                    </form>
+                </main>
 
                 <img src="./images/icon-discussion.png" alt="logo de tchat" class="logoTchat" />
                 <div class="tchatMenu">

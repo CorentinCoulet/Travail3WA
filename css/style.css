@@ -234,6 +234,127 @@ td {
 
 /*--------------------------------------------------------------------
 
-                                Login
+                                EventActu
 
 --------------------------------------------------------------------*/
+
+.eventActu {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreNote, .eventActu article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.titreNote div {
+    width: 30%;
+    background-color: #3F2A35;
+    border-radius: 20px;
+}
+
+.titreNote {
+    margin-bottom: 50px;
+}
+
+.eventActu p {
+    text-align: center;
+}
+
+.eventActu article img {
+    width: 450px;
+    height: 350px;
+}
+
+/*--------------------------------------------------------------------
+
+                                Compte
+
+--------------------------------------------------------------------*/
+
+.blocCompte {
+    width: auto;
+    height: auto;
+}
+
+.menuConnexion {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#F5F5DC, #DCDCDC, #808080);
+    margin-top: 18%;
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
+.menuConnexion p {
+    color: #3F373C;
+}
+
+.signIn, .logIn {
+    margin: 20px;
+}
+
+/*--------------------------------------------------------------------
+
+                                Inscription
+
+--------------------------------------------------------------------*/
+
+.pageInscription {
+    width: 50%;
+    height: auto;
+    margin: 10% auto; 
+    padding: 0; 
+    background: linear-gradient(#F5F5DC, #DCDCDC, #808080);
+    border: 1px solid #ccc;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.pageInscription ul {
+    list-style: none;
+}
+
+.pageInscription li {
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+}
+
+.pageInscription input, .pageInscription button {
+    background-color: #F5F5DC;
+    color: #3F373C;
+    border-radius: 10px;
+}
+/*--------------------------------------------------------------------
+
+                                Connexion
+
+--------------------------------------------------------------------*/
+
+.pageInscription .connexionAutre:last-child {
+    width: 40%;
+}
+
+.connexionBasique li:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+}
+
+.connexionBasique li:last-child {
+    margin-top: 20px;
+}
+
+.connexionAutre img {
+    width: 30px;
+    height: 30px;
+}
