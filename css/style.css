@@ -283,7 +283,8 @@ td {
 }
 
 .eventActu p {
-    text-align: center;
+    text-align: left;
+    justify-content: center;
     background-color: #3F2A35;
     border-radius: 20px;
 }
