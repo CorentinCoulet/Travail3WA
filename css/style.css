@@ -29,6 +29,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 .image {
@@ -36,6 +37,9 @@ header {
     height: calc(100% - 50px);
     background-image: url("../images/reunion2.jpg");
     background-size: cover;
+
+    max-height: 100vh;
+    overflow-y: auto;
 }
   
 .image p {
@@ -262,11 +266,66 @@ td {
 
 .eventActu p {
     text-align: center;
+    background-color: #3F2A35;
+    border-radius: 20px;
+}
+
+.eventActu article p {
+    font-size: medium;
+    padding: 20px;
+    margin: 5%;
+}
+
+.eventActu article div {
+    width: 60%;
+    height: auto;
+}
+
+.eventActu article img {
+    margin-left: 20px; 
 }
 
 .eventActu article img {
     width: 450px;
     height: 350px;
+}
+
+@media screen and (max-width: 900px){
+    .eventActu article img {
+        display: none;
+    }
+}
+
+/*--------------------------------------------------------------------
+
+                                Commentaire
+
+--------------------------------------------------------------------*/
+
+.commentaire {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#F5F5DC, #DCDCDC, #808080);
+    justify-content: center;
+    align-items: center;
+    margin: 15% 30%;
+}
+
+.commentaire form {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentaire form div:first-child, .commentaire form div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.commentaire input {
+    margin: 10px 0 20px 0;
 }
 
 /*--------------------------------------------------------------------
