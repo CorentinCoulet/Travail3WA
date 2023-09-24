@@ -16,8 +16,9 @@ header {
     padding-right: 20px;
     width: 98%;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    align-items: right;
+    align-items: flex-end;
 }
 
 .degrade {
@@ -67,12 +68,12 @@ a {
     color: #F3F1F1;
 }
 
-button, input {
+.menuB button, .menuB input, .menuNormal button, .menuNormal input {
     color: #F3F1F1;
     background-color: #3F2A35;
 }
 
-input::placeholder {
+.menuB input::placeholder, .menuNormal input::placeholder {
     color: #F3F1F1; 
 }
 
@@ -181,41 +182,58 @@ input::placeholder {
     background-color: #8BBDBD; 
 }
 
-.menuBurgerPage a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.menuBurgerPage a:hover {
-    background: #444;
-}
-
 @media screen and (max-width: 900px){
     .menuNormal {
         display: none;
     }
+
     .menuB {
         display: flex;
         flex-direction: column;
     }
-    .boutonMenuB {
+
+    .menuB .menuBurgerAffiche {
         display: none;
     }
+
+    .boutonMenuB {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boutonMenu {
+        border-radius: 0;
+    }
+
     .logoBar {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    #hamburger {
-        visibility: hidden;
+
+    .hamburger-logo {
+        position: fixed;
+        top: 3%;
+        left: 5%;
     }
-    .hamburger-logo:active + .boutonMenuB {
+
+    .hamburger-logo:active + .menuBurgerAffiche {
         display: flex;
         flex-direction: column;
-        padding: 30px;
-    }
+        border: 3px solid #3F373C;
+        border-radius: 10px;
+        background: linear-gradient(#F5F5DC, #DCDCDC, #808080);
+        position: fixed;
+        top: 8%;
+        left: 5%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
 }
 
 /*--------------------------------------------------------------------
